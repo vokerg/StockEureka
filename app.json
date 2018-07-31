@@ -1,0 +1,32 @@
+{
+  "name": "StockEureka",
+  "scripts": {
+  },
+  "env": {
+    "EUREKA_DEFAULT_ZONE": {
+      "required": true
+    },
+    "EUREKA_PASSWORD": {
+      "required": true
+    },
+    "EUREKA_PORT": {
+      "required": true
+    },
+    "EUREKA_USERNAME": {
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ]
+}
